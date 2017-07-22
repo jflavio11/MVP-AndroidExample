@@ -51,7 +51,7 @@
         style="@style/Simplebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login.title"/>
+        android:text="@string/login.btn"/>
 
     <ProgressBar
         android:id="@+id/loginActivity_pb"

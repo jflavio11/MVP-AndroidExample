@@ -20,7 +20,7 @@
         style="@style/AppTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login.title"/>
+        android:text="@string/email.title"/>
 
     <EditText
         android:id="@+id/sendEmailActivity_et_email"
