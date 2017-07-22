@@ -95,6 +95,7 @@ public class SendEmailActivity extends AppCompatActivity implements SendEmailCon
                 break;
         }
         setLoader(false);
+        cleanFields();
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 

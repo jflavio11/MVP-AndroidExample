@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
                 break;
         }
         setLoader(false);
+        cleanFields();
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
