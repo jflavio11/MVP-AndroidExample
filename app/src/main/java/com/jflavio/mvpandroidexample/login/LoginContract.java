@@ -12,9 +12,9 @@ package com.jflavio.mvpandroidexample.login;
  * Interfaces for Model-View-Presenter pattern. {@link LoginActivity} must implements {@link View}, {@link LoginPresenter} must
  * implements {@link UserActionListener} and {@link LoginModelImpl} must implements {@link LoginModel}.
  *
- * Remember that user interacts with application user interface through activities, fragments, dialogs, etc. This implements View
- * interface for communicate with the Presenter that is going to be the intermediary between The Model which contains all bussines logic
- * and the GUI interactions.
+ * Remember that user interacts with application graphic interface through activities, fragments, dialogs, etc. These implement View
+ * interface for communication with the Presenter that is going to be the intermediary between The Model which contains all bussines logic
+ * and all GUI interactions.
  */
 public class LoginContract {
 
