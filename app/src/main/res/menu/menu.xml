@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by JoseFlavio on 7/22/17 1:38 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Contact: jflavio90@gmail.com
+  ~
+  ~ Last modified 7/22/17 1:38 AM
+  -->
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItem_logout"
+        android:enabled="true"
+        android:title="@string/logout.title"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+</menu>

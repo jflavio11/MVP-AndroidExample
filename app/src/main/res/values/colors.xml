@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by JoseFlavio on 7/22/17 1:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Contact: jflavio90@gmail.com
+  ~
+  ~ Last modified 7/21/17 8:29 PM
+  -->
+
+<resources>
+    <color name="colorPrimary">#B6B4BB</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

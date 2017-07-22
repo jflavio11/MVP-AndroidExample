@@ -1,0 +1,33 @@
+<!--
+  ~ Created by JoseFlavio on 7/22/17 1:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Contact: jflavio90@gmail.com
+  ~
+  ~ Last modified 7/22/17 12:59 AM
+  -->
+
+<resources>
+    <string name="app_name">MVPAndroidExample</string>
+
+    <string name="login.title">MVP Example</string>
+
+    <string name="login.hint.email">youremail@email.com</string>
+    <string name="login.hint.password">your password</string>
+    <string name="login.btn">Login</string>
+
+    <string name="login.error.unknown">Unknown error on login. Please try again.</string>
+    <string name="login.error.invalidPassword">Please put a valid password.</string>
+    <string name="login.error.invalidEmail">Please put a valid email.</string>
+    <string name="login.error.invalidLogin">Password and email incorrect.</string>
+
+    <string name="email.title">Send an email!</string>
+    <string name="email.hint.emailto">To: </string>
+    <string name="email.hint.message">Write your message here…</string>
+    <string name="email.btn">Send it</string>
+
+    <string name="email.error.messageLong">Error. The message must have 100 chars max.</string>
+    <string name="email.success">Email was sent!</string>
+
+    <string name="logout.title">Logout</string>
+
+</resources>

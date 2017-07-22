@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by JoseFlavio on 7/22/17 1:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Contact: jflavio90@gmail.com
+  ~
+  ~ Last modified 7/22/17 12:35 AM
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context="com.jflavio.mvpandroidexample.login.LoginActivity">
+
+    <TextView
+        style="@style/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login.title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/loginActivity_et_email"
+        style="@style/SimpleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login.hint.email"
+        android:inputType="textEmailAddress"
+        tools:ignore="LabelFor"/>
+
+    <EditText
+        android:id="@+id/loginActivity_et_password"
+        style="@style/SimpleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login.hint.password"
+        android:inputType="textPassword"
+        tools:ignore="LabelFor"/>
+
+    <Button
+        android:id="@+id/loginActivity_btn_login"
+        style="@style/Simplebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login.title"/>
+
+    <ProgressBar
+        android:id="@+id/loginActivity_pb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

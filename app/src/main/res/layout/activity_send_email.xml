@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by JoseFlavio on 7/22/17 1:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Contact: jflavio90@gmail.com
+  ~
+  ~ Last modified 7/21/17 9:03 PM
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:orientation="vertical"
+    tools:context="com.jflavio.mvpandroidexample.sendemail.SendEmailActivity">
+
+    <TextView
+        style="@style/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login.title"/>
+
+    <EditText
+        android:id="@+id/sendEmailActivity_et_email"
+        style="@style/SimpleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email.hint.emailto"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/sendEmailActivity_et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/email.hint.message"
+        android:inputType="textMultiLine"
+        android:maxLines="10"/>
+
+    <Button
+        android:id="@+id/sendEmailActivity_btn_send"
+        style="@style/Simplebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email.btn"/>
+
+    <ProgressBar
+        android:id="@+id/sendEmailActivity_pb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
