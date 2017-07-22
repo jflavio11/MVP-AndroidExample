@@ -10,12 +10,12 @@ package com.jflavio.mvpandroidexample.login;
 
 import com.jflavio.mvpandroidexample.utils.ErrorConstants;
 
-public class LoginPresenter implements LoginContract.UserActionListener {
+class LoginPresenter implements LoginContract.UserActionListener {
 
     private LoginContract.View view;
     private LoginModelImpl loginModel;
 
-    public LoginPresenter(LoginContract.View view) {
+    LoginPresenter(LoginContract.View view) {
         this.view = view;
         this.loginModel = new LoginModelImpl();
     }

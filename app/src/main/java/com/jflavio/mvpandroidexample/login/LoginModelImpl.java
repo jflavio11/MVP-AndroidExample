@@ -13,8 +13,8 @@ package com.jflavio.mvpandroidexample.login;
  */
 public class LoginModelImpl implements LoginContract.LoginModel {
 
-    public static final String EMAIL_TEST = "email@email.com";
-    public static final String PASSWORD_TEST = "myPassword123";
+    private static final String EMAIL_TEST = "email@email.com";
+    private static final String PASSWORD_TEST = "myPassword123";
 
     @Override
     public boolean isValidEmail(String email) {

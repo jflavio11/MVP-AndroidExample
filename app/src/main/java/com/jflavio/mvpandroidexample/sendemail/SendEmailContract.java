@@ -9,7 +9,7 @@
 package com.jflavio.mvpandroidexample.sendemail;
 
 
-public class SendEmailContract {
+class SendEmailContract {
 
     interface View {
         void setLoader(boolean visible);

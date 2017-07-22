@@ -11,12 +11,12 @@ package com.jflavio.mvpandroidexample.sendemail;
 
 import com.jflavio.mvpandroidexample.utils.ErrorConstants;
 
-public class SendEmailPresenter implements SendEmailContract.UserActionListener {
+class SendEmailPresenter implements SendEmailContract.UserActionListener {
 
     private SendEmailContract.View view;
     private SendEmailModelImpl model;
 
-    public SendEmailPresenter(SendEmailContract.View view) {
+    SendEmailPresenter(SendEmailContract.View view) {
         this.view = view;
         this.model = new SendEmailModelImpl();
     }

@@ -16,7 +16,7 @@ package com.jflavio.mvpandroidexample.login;
  * interface for communication with the Presenter that is going to be the intermediary between The Model which contains all bussines logic
  * and all GUI interactions.
  */
-public class LoginContract {
+class LoginContract {
 
     interface View {
         void initView();
@@ -29,7 +29,7 @@ public class LoginContract {
         void login(String username, String password);
     }
 
-    public interface LoginModel {
+    interface LoginModel {
         boolean isValidEmail(String email);
         boolean isValidPassword(String password);
         boolean validateLogin(String email, String password);
