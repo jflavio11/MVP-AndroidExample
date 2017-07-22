@@ -23,7 +23,7 @@ public class LoginModelImpl implements LoginContract.LoginModel {
 
     @Override
     public boolean isValidPassword(String password) {
-        return password.length() == 10;
+        return password.length() >= 10;
     }
 
     @Override
