@@ -22,6 +22,7 @@ class LoginContract {
         void initView();
         void setLoader(boolean visible);
         void showError(int errorType);
+        void cleanFields();
         void onLoginSuccess();
     }
 

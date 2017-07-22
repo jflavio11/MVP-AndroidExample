@@ -104,6 +104,12 @@ public class SendEmailActivity extends AppCompatActivity implements SendEmailCon
     }
 
     @Override
+    public void cleanFields() {
+        sendEmailActivityEtEmail.setText("");
+        sendEmailActivityEtMessage.setText("");
+    }
+
+    @Override
     public void logOut() {
         startActivity(new Intent(this, LoginActivity.class));
         finish();

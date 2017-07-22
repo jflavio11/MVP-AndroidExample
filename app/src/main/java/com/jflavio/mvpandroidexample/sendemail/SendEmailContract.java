@@ -15,6 +15,7 @@ class SendEmailContract {
         void setLoader(boolean visible);
         void onError(int errorType);
         void onEmailSent();
+        void cleanFields();
         void logOut();
     }
 

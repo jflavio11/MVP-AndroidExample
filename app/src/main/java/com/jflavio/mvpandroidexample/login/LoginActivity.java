@@ -80,6 +80,12 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
     }
 
     @Override
+    public void cleanFields() {
+        loginActivityEtEmail.setText("");
+        loginActivityEtPassword.setText("");
+    }
+
+    @Override
     public void onLoginSuccess() {
         setLoader(false);
         startActivity(new Intent(this, SendEmailActivity.class));
