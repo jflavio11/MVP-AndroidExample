@@ -10,6 +10,7 @@ package com.jflavio.mvpandroidexample.sendemail;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -72,8 +73,14 @@ public class SendEmailActivity extends AppCompatActivity implements SendEmailCon
         sendEmailActivityBtnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userActionListener.sendEmail("currentEmail@email.com", sendEmailActivityEtEmail.getText().toString(),
-                        sendEmailActivityEtMessage.getText().toString());
+                setLoader(true);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        userActionListener.sendEmail("currentEmail@email.com", sendEmailActivityEtEmail.getText().toString(),
+                                sendEmailActivityEtMessage.getText().toString());
+                    }
+                }, 3000);
             }
         });
     }
@@ -95,7 +102,6 @@ public class SendEmailActivity extends AppCompatActivity implements SendEmailCon
                 break;
         }
         setLoader(false);
-        cleanFields();
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 

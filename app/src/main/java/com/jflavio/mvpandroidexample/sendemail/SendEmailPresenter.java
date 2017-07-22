@@ -26,6 +26,7 @@ class SendEmailPresenter implements SendEmailContract.UserActionListener {
 
         if (!this.model.validateEmail(to)) {
             this.view.onError(ErrorConstants.ERROR_INVALID_EMAIL);
+            this.view.cleanFields();
             return;
         }
 
@@ -35,6 +36,8 @@ class SendEmailPresenter implements SendEmailContract.UserActionListener {
         }
 
         if (this.model.sendEmail(from, to, message)) {
+            this.view.setLoader(false);
+            this.view.cleanFields();
             this.view.onEmailSent();
         } else {
             this.view.onError(ErrorConstants.ERROR_SERVER);
